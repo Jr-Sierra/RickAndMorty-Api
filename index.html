@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick And Morty Api</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: rgb(92, 184, 190);
+        }
+        
+        p {
+            font-size: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="" id="ImgPersonaje">
+    </div>
+    <div>
+        <p id="name"></p>
+    </div>
+
+
+</body>
+<script>
+    const $ImgPersonaje = document.querySelector('#ImgPersonaje');
+
+    function Render(image) {
+        $ImgPersonaje.setAttribute('src', image)
+    }
+
+    function nombre(nombre) {
+        document.getElementById('name').innerHTML = nombre;
+    }
+    fetch('https://rickandmortyapi.com/api/character/472')
+        .then(response => response.json())
+        .then(data => {
+            Render(data.image)
+            nombre(data.name)
+        })
+</script>
+
+</html>
