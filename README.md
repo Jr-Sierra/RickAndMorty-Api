@@ -1,12 +1,12 @@
 # RickAndMorty-Api
-Consumir la API publica de Rick and Morty y mostrar información:
+Consumir la API pública de Rick and Morty y mostrar información:
 * Imagen. 
 * Nombre. 
 * Especie. 
 * Estado. 
-* Genero. 
+* Género. 
 * Origen.
-* Ubicacion Actual. 
+* Ubicación Actual. 
 
-# Pruebalo
+# Pruébalo
 [Link GitHub Pages](https://jrsierrag.github.io/RickAndMorty-Api/)
