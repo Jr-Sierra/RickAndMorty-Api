@@ -9,4 +9,4 @@ Consumir la API pública de Rick and Morty y mostrar información:
 * Ubicación Actual. 
 
 # Pruébalo
-[Link GitHub Pages](https://jrsierrag.github.io/RickAndMorty-Api/)
+[Link GitHub Pages](https://jrsierrag.github.io/RickAndMorty/)
