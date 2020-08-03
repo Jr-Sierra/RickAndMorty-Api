@@ -1,4 +1,4 @@
-# RickAndMorty-Api
+# RickAndMorty ![Ansible Quality Score](https://img.shields.io/badge/status-in%20progress-green)
 Consumir la API pública de Rick and Morty y mostrar información:
 * Imagen. 
 * Nombre. 
