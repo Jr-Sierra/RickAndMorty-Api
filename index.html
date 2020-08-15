@@ -5,46 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick And Morty Api</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="info-left">
-                    <form class="form-inline">
-                        <form>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                            </select>
-                            <button id="btn-search" class="btn btn-outline-success my-2 my-sm-0" type="submit">View</button>
-                        </form>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row mt-2">
-            <div class="col-md-10">
-                <div class="card mb-2">
-                    <img id="ImgPersonaje" class="card-img-top">
-                    <div class="car-body">
-                        <h1 id="name" class="card-title text-center"></h1>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li id="species" class="list-group-item"></li>
-                        <li id="status" class="list-group-item"></li>
-                        <li id="gender" class="list-group-item"></li>
-                        <li id="origin" class="list-group-item"></li>
-                        <li id="location" class="list-group-item"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
+    <header class="header">
+        <img src="./img/logoR&M.png" alt="Logo">
+    </header>
+    <h1 id="name-placeholder" class="name-placeholder"></h1>
+    <div class="character">
+        <figure class="img-container">
+            <img id="ImgCharacter" class="imgCharacter">
+        </figure>
+        <div class="about-character">
+            <h1 id="name"></h1>
+            <ul>
+                <li id="species" class="about-info"></li>
+                <li id="status" class="about-info"></li>
+                <li id="gender" class="about-info"></li>
+                <li id="origin" class="about-info"></li>
+                <li id="location" class="about-info"></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <span class="next" id="next"></span>
+    </footer>
 
     <script src="script.js"></script>
 </body>

@@ -1,8 +1,129 @@
 body {
-    margin: 0;
-    display: grid;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
     background: rgb(92, 184, 190);
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    width: 25vw;
+    margin: 0 auto;
+}
+
+.header img {
+    width: 80%;
+}
+
+.name-placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    font-size: 400px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.character {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.img-container {
+    order: 1;
+    margin-right: 10vw;
+}
+
+.imgCharacter {
+    border-radius: 50%;
+}
+
+.about-character {
+    margin-left: 10vw;
+}
+
+.about-character h1 {
+    font-size: 3em;
+    margin: 0 0 20px 0;
+}
+
+.about-character ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.about-info {
+    background-color: rgb(104, 81, 40);
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 15px;
+    display: inline-block;
+}
+
+.color-status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.color-status.red {
+    background-color: rgb(200, 40, 0);
+}
+
+.color-status.green {
+    background-color: green;
+}
+
+.color-status.yellow {
+    background-color: rgb(214, 129, 0);
+}
+
+.next {
+    user-select: none;
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url(./img/arrow.svg);
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 40vh;
+    }
+    .header img {
+        width: 100%;
+    }
+    .name-placeholder {
+        position: fixed;
+        font-size: 250px;
+    }
+    .character {
+        display: initial;
+    }
+    .about-info {
+        width: 100%;
+    }
+    .about-character {
+        margin: 0 auto;
+    }
+    .about-character h1 {
+        text-align: center;
+        font-size: 2.4em;
+    }
+    .about-character ul {
+        font-size: 1em;
+    }
 }
